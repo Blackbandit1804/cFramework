@@ -1,0 +1,24 @@
+{
+    "name": "ALTV_CRAZY",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "md5": "^2.2.1",
+        "mysql2": "^2.1.0",
+        "node-fetch": "^2.6.0",
+        "nodemon": "^2.0.4",
+        "sequelize": "^5.21.11"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "hot": "nodemon --watch resources/gamemode --exec \"./altv-server.exe\" -- --inspect=9229"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
