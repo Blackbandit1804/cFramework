@@ -4,9 +4,10 @@ import { registerCmd } from '../../classes/ChatAPI'
 registerCmd('health', (player, msg) => {
     if (player.hasGroup('admin')) {
         if (msg > 0) {
+            if (msg < 100) msg += 100;
             player.health = parseInt(msg);
         } else {
-            alt.emitClient(player, 'client/classes/ChatAPI/message', `~r~Precisa inserir a quantidade de vida para ser adicionada. Ex: /health 200.`, 'Global')
+            alt.emitClient(player, 'client/classes/ChatAPI/message', `~r~Precisa inserir a quantidade de vida para ser adicionada. Ex: /health 120.`, 'Global')
         }
     } else {
         alt.emitClient(player, 'client/classes/ChatAPI/message', `~r~Você não possui permissão para usar este comando.`, 'Global')
