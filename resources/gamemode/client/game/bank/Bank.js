@@ -1,8 +1,7 @@
 import * as alt from 'alt'
 import * as game from 'natives';
 import Browser from '../../utils/classes/Browser'
-import { gameControls } from '../../utils/helpers/Helper'
-import { toggleCursor } from '../helpers/Helper'
+import { gameControls, toggleCursor } from '../../utils/helpers/Helper'
 
 const objects = ["prop_fleeca_atm", "prop_atm_01", "prop_atm_02", "prop_atm_03"]
 var Bank = {}
